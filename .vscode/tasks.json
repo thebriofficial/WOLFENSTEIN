@@ -6,9 +6,12 @@
             "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "args": [
                 "-g",
-                "-I${workspaceRoot}\\lib\\SDL\\include\\SDL3",
-                "-I${workspaceRoot}\\lib\\SDL\\src",
-                "${workspaceRoot}\\src\\main.c",
+                "-I${workspaceRoot}\\include\\SDL2",
+                "-L${workspaceRoot}\\lib",
+                "${workspaceRoot}\\src\\main.cpp",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
                 "-o",
                 "${workspaceRoot}\\builds\\wolfenstein.exe"
             ],
